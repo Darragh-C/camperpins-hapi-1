@@ -3,7 +3,7 @@ import { db } from "../models/db.js";
 import { UserSpec, UserSpecPlus, IdSpec, UserArray, UserCredentialsSpec, JwtAuth } from "../models/joi-schemas.js";
 import { validationError } from "./logger.js";
 import { createToken } from "./jwt-utils.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 export const userApi = {
 
